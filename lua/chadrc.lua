@@ -6,16 +6,20 @@
 local M = {}
 
 M.base46 = {
-  theme = "onedark",
+  -- theme = "onedark",
   -- theme = "palenight",
   -- theme = "gruvchad",
+  -- theme = "catppuccin",
+  -- theme = "kanagawa",
+  theme = "tokyonight",
 
   hl_override = {
     Comment = { italic = true },
-    Function = { bold = true },
-
+    Function = { italic = true, bold = true },
+    String = {bold = true},
     ["@comment"] = { italic = true },
-    ["@function"] = { bold = true },
+    ["@function"] = { italic = true },
+    ["@string"] = { bold = true }
   },
 }
 

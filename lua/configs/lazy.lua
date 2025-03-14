@@ -38,7 +38,7 @@ return {
         "syntax",
         "synmenu",
         "optwin",
-        "compiler",
+        -- "compiler",
         "bugreport",
         "ftplugin",
       },

@@ -41,6 +41,27 @@ return {
     end,
   },
  
- "nvchad/volt", -- optional, needed for theme switcher
+  "nvchad/volt", -- optional, needed for theme switcher
   -- or just use Telescope themes
+  { "nvim-java/nvim-java" },
+  {
+    {
+      "ej-shafran/compile-mode.nvim",
+      branch = "latest"
+    }
+  },
+  
+  {
+  "NeogitOrg/neogit",
+  dependencies = {
+    "nvim-lua/plenary.nvim",         -- required
+    "sindrets/diffview.nvim",        -- optional - Diff integration
+
+    -- Only one of these is needed.
+    "nvim-telescope/telescope.nvim", -- optional
+    "ibhagwan/fzf-lua",              -- optional
+    "echasnovski/mini.pick",         -- optional
+  },
+  config = true
+  }
 }
